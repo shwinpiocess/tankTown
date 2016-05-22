@@ -1,2 +1,7 @@
 # Ignore node modules
 node_modules/
+
+# Ignore asset builds
+dist/css
+dist/img
+dist/js
