@@ -1,15 +1,35 @@
-'use strict';
+import $      from 'jquery';
+import Game   from './game';
+import Util   from './utility';
 
-import $ from 'jquery';
+let game;
 
-$(document).ready(() => {
-  const $window = $(window);
-  const windowHeight = $window.height();
-  const windowWidth  = $window.width();
+/**
+  * Application entry point. Handles the creation and management of app classes
+  * Calls game class to initialize game. 
+*/
+const App = {
 
-  let $gameBoard = $('#gameBoard');
+  init() {
 
-  $gameBoard.width(windowWidth);
-  $gameBoard.height(windowHeight);
+    $(document).on('start', (event) => {      
+      Util.hideStartModal();
 
-});
+      game = new Game(event.options);
+    });
+
+    Util.handleStartGameInput();
+
+  },
+
+  end() {
+
+  }
+
+
+}
+
+module.exports = App;
+
+App.init();
+

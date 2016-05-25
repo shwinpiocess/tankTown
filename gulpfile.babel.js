@@ -16,6 +16,9 @@ const jsSourceFiles = [
   './src/js/app.js',
   './src/js/board.js',
   './src/js/game.js',
+  './src/js/enemy.js',
+  './src/js/player.js',
+  './src/js/tank.js',
   './src/js/utility.js'
 ];
 

@@ -1,7 +1,7 @@
 {
-  "name": "deip-clone",
+  "name": "TankTown",
   "version": "0.1.0",
-  "description": "A Deip.io clone",
+  "description": "A Deip.io Inspired Game",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -34,5 +34,8 @@
     "node-notifier": "^4.5.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.12.0"
   }
 }
