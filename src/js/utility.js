@@ -43,9 +43,14 @@ module.exports = {
 
   },
 
+  /**
+    * @function HideStartModal - Hides the start modal. duh
+  */
   hideStartModal() {
     $('#modal-start').hide();
-  }
+  },
+
+  // show end modal
 
 
 }

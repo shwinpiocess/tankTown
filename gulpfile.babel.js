@@ -19,7 +19,8 @@ const jsSourceFiles = [
   './src/js/enemy.js',
   './src/js/player.js',
   './src/js/tank.js',
-  './src/js/utility.js'
+  './src/js/utility.js',
+  './src/js/bullet.js'
 ];
 
 gulp.task('build', () => {

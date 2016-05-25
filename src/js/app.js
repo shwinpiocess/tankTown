@@ -12,6 +12,7 @@ const App = {
 
   init() {
 
+    // game starts
     $(document).on('start', (event) => {      
       Util.hideStartModal();
 
@@ -20,16 +21,20 @@ const App = {
 
     Util.handleStartGameInput();
 
+    // game ends 
+    $(document).on('end', (event) => {
+      // show ending modal 
+      // prompt to play again 
+    });
+
   },
 
   end() {
 
   }
 
-
 }
 
 module.exports = App;
 
 App.init();
-
